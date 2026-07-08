@@ -142,7 +142,7 @@ const OurStory = () => {
 
                     {/* Underlined Action Link */}
                     <a
-                        href="https://tiktok.com"
+                        href="https://www.tiktok.com/@jcaluminumroof?lang=en"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs sm:text-sm font-bold text-neutral-900 underline mt-3 hover:text-neutral-600 transition-colors inline-flex items-center gap-1"
@@ -170,7 +170,7 @@ const OurStory = () => {
 
                     {/* Underlined Action Link */}
                     <a
-                        href="https://instagram.com"
+                        href="https://www.instagram.com/pergolas_by_jc_aluminum/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs sm:text-sm font-bold text-neutral-900 underline mt-3 hover:text-neutral-600 transition-colors inline-flex items-center gap-1"

@@ -59,7 +59,7 @@ const Footer = () => {
               <Link to="/blog" className="hover:text-black transition-colors">Blog</Link>
               <Link to="/terms" className="hover:text-black transition-colors">Terms of Service</Link>
               <Link to="/refund-policy" className="hover:text-black transition-colors">Refund policy</Link>
-              <Link to="/manual" className="hover:text-black transition-colors">Installation Manual Luxury Pergola</Link>
+              <Link to="/BlogDetails" className="hover:text-black transition-colors">Installation Manual Luxury Pergola</Link>
               <Link to="/privacy-policy" className="hover:text-black transition-colors">Privacy Policy</Link>
             </div>
           </div>

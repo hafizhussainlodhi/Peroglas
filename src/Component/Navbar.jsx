@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Center: Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8 text-white/90 text-sm font-medium">
-          <Link to="/pergolas" className="hover:text-white transition-colors flex items-center gap-1">
+          <Link to="/luxury-pergola" className="hover:text-white transition-colors flex items-center gap-1">
             Pergolas 
             <svg className="w-3 h-3 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
           </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
         {/* Right: Desktop CTA & Utilities */}
         <div className="hidden md:flex items-center gap-6">
-          <Link to="/schedule" className="border border-white text-white px-5 py-2 text-sm font-medium hover:bg-white hover:text-black transition-all duration-300 rounded-sm">
+          <Link to="/contact-us" className="border border-white text-white px-5 py-2 text-sm font-medium hover:bg-white hover:text-black transition-all duration-300 rounded-sm">
             Schedule A Conversation
           </Link>
           <div className="flex items-center gap-4">
@@ -74,12 +74,12 @@ const Navbar = () => {
       {/* Mobile Drawer Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-neutral-950/95 backdrop-blur-md border-t border-white/10 px-6 py-6 flex flex-col gap-4 animate-fadeIn">
-          <Link to="/pergolas" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Pergolas</Link>
+          <Link to="/luxury-pergola" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Pergolas</Link>
           <Link to="/outdoor-kitchens" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Outdoor Kitchens</Link>
           <Link to="/inspiration-gallery" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Inspiration Gallery</Link>
           <Link to="/our-story" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Our Story</Link>
           <Link to="/contact-us" onClick={() => setIsOpen(false)} className="text-white text-base font-medium border-b border-white/5 pb-2">Contact Us</Link>
-          <Link to="/schedule" onClick={() => setIsOpen(false)} className="mt-2 block text-center border border-white text-white py-2 text-sm font-medium rounded-sm">
+          <Link to="/contact-us" onClick={() => setIsOpen(false)} className="mt-2 block text-center border border-white text-white py-2 text-sm font-medium rounded-sm">
             Schedule A Conversation
           </Link>
         </div>
