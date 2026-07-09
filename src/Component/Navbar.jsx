@@ -8,7 +8,7 @@ const Navbar = () => {
   // Dropdown list data with correct path mappings
   const pergolaDropdownItems = [
     { name: 'Plain Modern Free-Standing Pergolas', path: '/plain-modern-free-standing' },
-    { name: 'Free-Standing Pergolas', path: '/plain-modern-free-standing' },
+    { name: 'Free-Standing Pergolas', path: '/modern-wall-mounted' },
     { name: 'Mounted Pergolas on Brackets', path: '/mounted-on-brackets' },
     { name: 'Outdoor Kitchens', path: '/outdoor-kitchens' }
   ];
