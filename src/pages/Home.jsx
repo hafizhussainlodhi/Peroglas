@@ -8,7 +8,7 @@ const categories = [
     {
         id: 1,
         title: "Most Modern Free Standing",
-        path: "/free-standing",
+        path: "/luxury-pergola",
         bgImage: "",
         // Mobile par 280px tall, desktop par grid row spans automatic handle karega
         gridClasses: "col-span-1 h-[280px] md:h-full md:col-span-1 md:row-span-2"
@@ -69,7 +69,7 @@ const Home = () => {
                     {/* CTA Buttons - Matching exactly with Figma labels */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 w-full sm:w-auto">
                         <Link
-                            to="/free-standing"
+                            to="/luxury-pergola"
                             className="w-full sm:w-52 bg-white text-black font-semibold py-2.5 px-6 rounded-md hover:bg-neutral-200 transition-all text-center text-sm tracking-wide shadow-md"
                         >
                             Free Standing Pergolas

@@ -22,6 +22,10 @@ import SinglePro from './pages/SinglePro';
 import Card from './pages/Card';
 import Checkout from './pages/Checkout';
 import Myaccount from './pages/Myaccount';
+import Login from './pages/Login';
+import Forget from './pages/Forget';
+import Signup from './pages/Signup';
+import NewPass from './pages/NewPass';
 
 function App() {
   return (
@@ -33,6 +37,10 @@ function App() {
         {/* App Pages */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/forget-password" element={<Forget />} />
+          <Route path="/new-pass" element={<NewPass />} />
           <Route path="/outdoor-kitchens" element={<OutdoorKitchens />} />
           <Route path="/terms" element={<TermsSer />} />
           <Route path="/refund-policy" element={<RefPolicy />} />
@@ -45,14 +53,14 @@ function App() {
           <Route path="/blog" element={<Blog />} />  
           <Route path="/BlogDetails" element={<BlogDetails />} />  
           <Route path="/mostModern" element={<MostModern />} />  
-          <Route path="/plainModern" element={<PlainModern />} />  
-          <Route path="/mounted" element={<Mounted />} />  
-          <Route path="/modern" element={<Modern />} />  
+          <Route path="/plain-modern-free-standing" element={<PlainModern />} />  
+          <Route path="/mounted-on-brackets" element={<Mounted />} />  
+          <Route path="/modern-wall-mounted" element={<Modern />} />  
           <Route path="/shop" element={<Shop />} />  
-          <Route path="/singlePro" element={<SinglePro />} />  
-          <Route path="/card" element={<Card />} />  
+          <Route path="/single-product" element={<SinglePro />} />  
+          <Route path="/cart" element={<Card />} />  
           <Route path="/checkout" element={<Checkout />} />  
-          <Route path="/myaccount" element={<Myaccount />} />  
+          <Route path="/my-account" element={<Myaccount />} />  
         </Routes>
       </div>
     </Router>

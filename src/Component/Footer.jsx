@@ -67,12 +67,19 @@ const Footer = () => {
           {/* Column 3: Account Links */}
           <div className="flex flex-col items-center sm:items-start">
             <h3 className="text-base font-bold tracking-wide text-white mb-4">Account</h3>
-            <div className="flex flex-col gap-2.5 text-xs sm:text-sm text-neutral-400 font-normal">
-              <Link to="/my-account" className="hover:text-white transition-colors">My Account</Link>
-              <Link to="/login" className="hover:text-white transition-colors">Login / Register</Link>
-              <Link to="/cart" className="hover:text-white transition-colors">Cart</Link>
-              <Link to="/shop" className="hover:text-white transition-colors">Shop</Link>
-            </div>
+          <div className="flex flex-col gap-2.5 text-xs sm:text-sm text-neutral-400 font-normal">
+  <Link to="/my-account" className="hover:text-white transition-colors">My Account</Link>
+  
+  {/* UI aur styles bilkul same hain, bas clickable areas alag ho gaye hain */}
+  <span className="transition-colors">
+    <Link to="/login" className="hover:text-white">Login</Link>
+    <span> / </span>
+    <Link to="/signup" className="hover:text-white">Register</Link>
+  </span>
+
+  <Link to="/cart" className="hover:text-white transition-colors">Cart</Link>
+  <Link to="/shop" className="hover:text-white transition-colors">Shop</Link>
+</div>
           </div>
 
           {/* Column 4: Contact Address & Phone details */}
