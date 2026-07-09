@@ -177,7 +177,7 @@ const PriPolicy = () => {
 
             </section>
             <TalkTo />
-            <Icon />
+
             <Footer />
         </>
     );

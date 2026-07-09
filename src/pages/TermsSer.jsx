@@ -182,7 +182,7 @@ const TermsSer = () => {
 
             {/* Lower elements injected correctly */}
             <TalkTo />
-            <Icon />
+
             <Footer />
         </>
     );

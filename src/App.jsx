@@ -14,6 +14,14 @@ import PeroglasTwo from './pages/PeroglasTwo';
 import Blog from './pages/Blog';
 import BlogDetails from './pages/BlogDetails';
 import MostModern from './pages/Most';
+import PlainModern from './pages/PlanModern';
+import Mounted from './pages/Mounted';
+import Modern from './pages/Modern';
+import Shop from './pages/Shop';
+import SinglePro from './pages/SinglePro';
+import Card from './pages/Card';
+import Checkout from './pages/Checkout';
+import Myaccount from './pages/Myaccount';
 
 function App() {
   return (
@@ -36,7 +44,15 @@ function App() {
           <Route path="/luxury-pergola" element={<PeroglasTwo />} />  
           <Route path="/blog" element={<Blog />} />  
           <Route path="/BlogDetails" element={<BlogDetails />} />  
-          <Route path="/MostModern" element={<MostModern />} />  
+          <Route path="/mostModern" element={<MostModern />} />  
+          <Route path="/plainModern" element={<PlainModern />} />  
+          <Route path="/mounted" element={<Mounted />} />  
+          <Route path="/modern" element={<Modern />} />  
+          <Route path="/shop" element={<Shop />} />  
+          <Route path="/singlePro" element={<SinglePro />} />  
+          <Route path="/card" element={<Card />} />  
+          <Route path="/checkout" element={<Checkout />} />  
+          <Route path="/myaccount" element={<Myaccount />} />  
         </Routes>
       </div>
     </Router>

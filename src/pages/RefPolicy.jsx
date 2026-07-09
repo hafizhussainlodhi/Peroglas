@@ -178,7 +178,7 @@ const RefPolicy = () => {
                 </div>
             </section>
             <TalkTo />
-            <Icon />
+
             <Footer />
         </>
     );

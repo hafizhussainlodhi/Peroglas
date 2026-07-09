@@ -1,181 +1,172 @@
-import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import Footer from '../Component/Footer';
 
 const BlogDetails = () => {
-  // Active slide state (Figma bottom slider indicators ke liye)
-  const [activeSlide, setActiveSlide] = useState(0);
+  const relatedPosts = [
+    {
+      id: 1,
+      image: '/d4.png',
+      date: '08.08.2021',
+      title: 'Things to know before visiting Cave in Germany',
+      desc: 'Progressively leanwides cooperative systems through technically sound functionalities. Credibly productize.'
+    },
+    {
+      id: 2,
+      image: '/d5.png',
+      date: '08.08.2021',
+      title: 'Nina Smith vibrant work collab with Nike Dunk',
+      desc: 'Progressively leanwides cooperative systems through technically sound functionalities. Credibly productize.'
+    },
+    {
+      id: 3,
+      image: '/d6.png',
+      date: '08.08.2021',
+      title: 'Richard Norton photorealistic rendering as real photos',
+      desc: 'Progressively leanwides cooperative systems through technically sound functionalities. Credibly productize.'
+    },
+    {
+      id: 4,
+      image: '/d7.png',
+      date: '08.08.2021',
+      title: '25 quality collectors toys inspired by famous films',
+      desc: 'Progressively leanwides cooperative systems through technically sound functionalities. Credibly productize.'
+    }
+  ];
 
   return (
-    <>
-      {/* ================= MAIN HERO SECTION ================= */}
-      <main className="relative min-h-[75vh] sm:min-h-[80vh] w-full bg-[#1A1E21] flex flex-col justify-end overflow-hidden pb-16 pt-24">
-        
-        {/* Subtle vignette layer overlay for premium look */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-0" />
-        
-        {/* Main Content Layout Wrapper */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 flex flex-col items-start justify-end text-left text-white">
-          
-          {/* Badge Tag category indicator */}
-          <span className="bg-white/10 text-white/90 text-[10px] sm:text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-md mb-5 backdrop-blur-sm select-none border border-white/5">
-            ADVENTURE
-          </span>
+    <div className="w-full bg-white text-black font-sans antialiased">
 
-          {/* Core Feature Post Title Heading */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight max-w-3xl leading-[1.1] text-white">
+      {/* ================= HERO BANNER SECTION ================= */}
+      <main
+        className="relative h-[380px] sm:h-[480px] md:h-[540px] w-full flex items-end justify-start overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/d1.png')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40 z-10" />
+
+        <div className="relative z-20 w-full max-w-4xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16 pb-12 text-left flex flex-col items-start gap-3">
+          <span className="bg-white/20 text-white backdrop-blur-[2px] text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-sm">
+            TUTORIAL
+          </span>
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
             Richird Norton photorealistic rendering as real photos
           </h1>
-
-          {/* Metadata Meta Rows Row info block */}
-          <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm text-white/60 font-medium max-w-2xl">
-           
-         
-            <p className="leading-relaxed text-white/80">
-              Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.
-            </p>
-          </div>
-
-        
-
+          <span className="text-neutral-300 text-xs font-normal">
+            08.08.2021 — Progressively leanwides cooperative systems through technically sound functionalities.
+          </span>
         </div>
       </main>
-{/* ================= SECTION: SINGLE BLOG POST READ LAYOUT (PERFECTLY CENTERED) ================= */}
-      <section className="w-full bg-white py-16 px-4 sm:px-8 text-black font-sans antialiased">
-        <div className="max-w-3xl mx-auto flex flex-col items-center w-full">
-          
-          {/* Top Centered Meta Block */}
-          <div className="flex items-center justify-center gap-3 text-xs font-bold text-neutral-400 select-none mb-8 w-full border-b border-neutral-100 pb-4">
+
+      {/* ================= ARTICLE BODY CONTENT ================= */}
+      <article className="w-full py-16 px-6 sm:px-8 lg:px-16 bg-white">
+        <div className="max-w-3xl mx-auto flex flex-col gap-6 text-sm sm:text-base text-neutral-800 leading-relaxed font-normal">
+
+          <div className="flex items-center gap-4 text-xs text-neutral-400 font-medium uppercase tracking-wider mb-2">
             <span>08.08.2021</span>
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-300" />
-            <span>4 minutes read</span>
+            <span>4 Min Read</span>
           </div>
 
-          {/* Article Body Content Wrapper */}
-          <div className="flex flex-col gap-6 text-sm sm:text-base text-neutral-700 leading-relaxed text-left sm:text-justify w-full font-normal">
-            
-            <p>
-              Seamlessly syndicate cutting-edge architectures rather than collaborative collaboration and idea-sharing. Proactively incubate visionary interfaces whereas premium benefits. Seamlessly negotiate ubiquitous leadership skills rather than parallel steps. Dramatically visualize superior interfaces for best-of-breed alignments. Synergistically formulate performance-based users through customized relationships. Interactively deliver cross-platform ROI via granular systems. Intrinsicly enhance effective initiatives vis-a-vis orthogonal outsourcing. Rapidiously monetize market-driven opportunities with multifunctional users. Collaboratively enhance customers opportunities through revolutionary schemas. Progressively network just in time customer service without real-time scenarios.
-            </p>
-            
-            <p>
-              Synergistically drive e-business leadership with unique synergy. Compellingly seize market positioning fifth-generation brick-and-click e-markets. Proactively myocardinate timely platforms through distributed systems. Professionally optimize multi-core competencies for leading-edge sources. Professionally enhance stand-alone leadership with innovative synergy. Rapidiously generate backward experiences vis-a-vis long-term high-impact relationships.
-            </p>
+          <p>
+            Seamlessly network parallel relationships via cross-unit architectures. Intrinsicly transition performance based technology and premium tools. Competently coordinate innovative markets before low-risk high-yield models. Globally orchestrate dynamic systems through orthogonal intellectual capital. Progressively extend vertical metrics through cross-platform solutions. Dynamically re-engineer prospective experiences rather than backward-compatible synergy.
+          </p>
 
-            {/* Mid Images Grid (Centered 2-Columns Matrix) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 w-full">
-              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.08)]">
-                <img src="/mountain.webp" alt="Article Visual Slot 1" className="w-full h-full object-cover hover:scale-102 transition-transform duration-300" />
-              </div>
-              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.08)]">
-                <img src="/mountain.webp" alt="Article Visual Slot 2" className="w-full h-full object-cover hover:scale-102 transition-transform duration-300" />
-              </div>
+          <p>
+            Competently network economically sound leadership through compelling schemas. Uniquely streamline bricks-and-clicks functionalities. Credibly productize seamless data with flexible schemas. Collaboratively network exceptional research and development via cutting-edge methods. Authoritatively productize business process management frameworks.
+          </p>
+
+          {/* Side-by-Side Symmetrical Images (d2.png & d3.png) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 w-full">
+            <div className="w-full aspect-[4/3] rounded-md overflow-hidden bg-neutral-50 shadow-sm">
+              <img src="/d2.png" alt="Article Visual Left" className="w-full h-full object-cover select-none" />
             </div>
-
-            <p>
-              Efficiently empower seamless meta-services with impactful opportunities. Distinctively transition virtual outsourcing with focused e-tailers.
-            </p>
-
-            {/* Orange Highlighted Blockquote Section (Centered Focus) */}
-            <div className="my-6 py-4 text-center border-t border-b border-neutral-100">
-              <h4 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-500 tracking-tight leading-snug max-w-2xl mx-auto">
-                " Monotonectally seize superior mindshare rather than efficient technology. "
-              </h4>
+            <div className="w-full aspect-[4/3] rounded-md overflow-hidden bg-neutral-50 shadow-sm">
+              <img src="/d3.png" alt="Article Visual Right" className="w-full h-full object-cover select-none" />
             </div>
-
-            <p>
-              Compellingly enforce seamless resources through competitive content. Continually actualize 24/365 segments for resource-leveling platforms. Energistically enhance high-standards in models and professional expertise. Intrinsicly iterate extensible mindshare preparative opportunities. Continually develop leading-edge experiences through quality e-services.
-            </p>
-
-            {/* Article Content Lower Filter Tags */}
-            <div className="flex flex-wrap items-center gap-2 mt-6 select-none justify-start">
-              <span className="text-[10px] font-bold text-neutral-500 bg-neutral-100 px-2.5 py-1 rounded-sm uppercase tracking-wider">ADVENTURE</span>
-              <span className="text-[10px] font-bold text-neutral-500 bg-neutral-100 px-2.5 py-1 rounded-sm uppercase tracking-wider">PHOTO</span>
-              <span className="text-[10px] font-bold text-neutral-500 bg-neutral-100 px-2.5 py-1 rounded-sm uppercase tracking-wider">DESIGN</span>
-            </div>
-
-            {/* Solid Horizontal Layout Border Split Divider Line */}
-            <hr className="border-neutral-100 w-full my-6" />
-
-            {/* Bottom Profile Author Footer Unit Card */}
-            <div className="flex items-center gap-4 text-left w-full mt-2">
-              {/* Profile Avatar Circle Image Placeholder */}
-              <div className="w-12 h-12 rounded-full bg-neutral-200 flex-shrink-0 border border-neutral-100" />
-              
-              <div className="flex flex-col">
-                <span className="text-xs sm:text-sm font-bold text-neutral-900 leading-tight">
-                  By Jennifer Lawrence
-                </span>
-                <span className="text-[10px] sm:text-xs text-neutral-400 font-medium mt-0.5">
-                  Thinker & Designer
-                </span>
-              </div>
-            </div>
-
           </div>
+
+          <p>
+            Efficiently scale scalable leadership infrastructure. Conveniently scale strategic community partnerships via process-centric deliverables. Objectively foster resource-maximizing schemas through performance-based technology.
+          </p>
+
+          {/* Blockquote Segment */}
+          <blockquote className="border-l-4 border-amber-500 pl-4 py-2 my-6 italic text-lg sm:text-xl md:text-2xl font-semibold text-neutral-900 tracking-tight leading-snug">
+            “ Monotonectally seize superior mindshare rather than efficient technology. ”
+          </blockquote>
+
+          <p>
+            Competently productize corporate architectures before standards-compliant internal or organic sources. Progressively network vertical metrics through cross-platform solutions. Authoritatively iterate user-friendly paradigms via client-focused metrics. Objectively matrix virtual relationships via client-focused methods.
+          </p>
+
+          {/* Tags Footer Section */}
+          <div className="flex items-center gap-2 mt-4 text-xs font-semibold uppercase tracking-wider text-neutral-400">
+            <span>PERGOLAS</span>
+            <span>•</span>
+            <span>KITCHENS</span>
+            <span>•</span>
+            <span>DESIGN</span>
+          </div>
+
+          <hr className="border-neutral-100 my-8" />
+
+          {/* Author Meta Row */}
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-neutral-200 overflow-hidden shrink-0">
+                <svg className="w-full h-full text-neutral-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" /></svg>
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="text-neutral-900 font-bold text-sm">Richard Norton</span>
+                <span className="text-neutral-400 text-xs">Content Architect</span>
+              </div>
+            </div>
+            {/* Social Share Minimalist Handles */}
+            <div className="flex items-center gap-4 text-neutral-400 text-sm">
+              <a href="#" className="hover:text-black transition-colors"><i className="fab fa-facebook-f"></i></a>
+              <a href="#" className="hover:text-black transition-colors"><i className="fab fa-twitter"></i></a>
+              <a href="#" className="hover:text-black transition-colors"><i className="fab fa-pinterest-p"></i></a>
+              <a href="#" className="hover:text-black transition-colors"><i className="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
         </div>
-      </section>
-{/* ================= SECTION: RELATED POSTS SECTION ================= */}
-      {/* Light off-white background to break the screen sequence and match the template view */}
-      <section className="w-full bg-[#F9F9F9] py-16 px-6 sm:px-12 lg:px-16 text-black font-sans antialiased border-t border-neutral-100">
-        <div className="max-w-7xl mx-auto">
-          
-          {/* Section Heading */}
-          <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight mb-8">
+      </article>
+
+      {/* ================= RELATED POSTS GRID BLOCK ================= */}
+      <section className="w-full bg-[#FBFBFB] py-16 px-4 sm:px-8 lg:px-16 border-t border-neutral-100">
+        <div className="max-w-7xl mx-auto flex flex-col items-start gap-8">
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900">
             Related Posts
           </h2>
 
-          {/* 4-Columns Card Matrix Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 w-full">
-            
-            {[
-              { tag: "ADVENTURE", title: "Thins to know before visiting Cave in Germany" },
-              { tag: "FASHION", title: "Nina Smith vibrant work collab with Nike Dunk" },
-              { tag: "ADVENTURE", title: "Richard Norton photorealistic rendering as real photos" },
-              { tag: "FASHION", title: "25 quality collectors toys inspired by famous films" }
-            ].map((post, idx) => (
-              
-              <div key={idx} className="flex flex-col items-start w-full group cursor-pointer">
-                
-                {/* Thumbnail image wrapper layout */}
-                <div className="relative w-full aspect-square bg-neutral-200 rounded-lg overflow-hidden mb-4 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.04)]">
-                  <img 
-                    src="/mountain.webp" 
-                    alt={post.title} 
-                    className="w-full h-full object-cover transform group-hover:scale-103 transition-transform duration-300"
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {relatedPosts.map((post) => (
+              <Link
+                key={post.id}
+                to={`/blog/${post.id}`}
+                className="group flex flex-col items-start text-left w-full cursor-pointer bg-white p-3 rounded-md border border-neutral-100 shadow-sm"
+              >
+                <div className="w-full aspect-[4/3] rounded-sm overflow-hidden bg-neutral-50 mb-3">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 select-none"
+                    loading="lazy"
                   />
-
-                  {/* Absolute Badge Category Tag */}
-                  <span className="absolute top-3 right-3 text-[8px] font-bold tracking-wider text-white/90 bg-black/25 backdrop-blur-xs px-2 py-0.5 rounded-sm uppercase">
-                    {post.tag}
-                  </span>
                 </div>
-
-                {/* Card Meta Row */}
-                <span className="text-[10px] sm:text-xs text-neutral-400 font-medium tracking-wide mb-1.5">
-                  08.08.2021
-                </span>
-
-                {/* Post Main Title Heading */}
-                <h3 className="text-sm sm:text-base font-bold text-neutral-900 tracking-tight leading-snug group-hover:text-neutral-700 transition-colors line-clamp-2">
+                <span className="text-neutral-400 text-[10px] font-semibold mb-1">{post.date}</span>
+                <h3 className="text-neutral-900 font-bold text-sm tracking-tight leading-snug mb-2 group-hover:text-neutral-700 transition-colors line-clamp-2">
                   {post.title}
                 </h3>
-
-                {/* Post Short Excerpt text description line */}
-                <p className="mt-2 text-xs text-neutral-500 leading-relaxed font-normal line-clamp-3">
-                  Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data with flexible schemas.
+                <p className="text-neutral-500 text-[11px] leading-relaxed line-clamp-3">
+                  {post.desc}
                 </p>
-
-              </div>
-
+              </Link>
             ))}
-
           </div>
-
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ const SocialIcon = ({ children, to }) => (
     href={to} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white hover:bg-neutral-800 transition-colors duration-200"
+    className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-black hover:bg-neutral-200 transition-colors duration-200"
   >
     {children}
   </a>
@@ -14,20 +14,20 @@ const SocialIcon = ({ children, to }) => (
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white border-t border-neutral-100 pt-16 pb-8 px-4 sm:px-8 lg:px-16 text-black">
+    <footer className="w-full bg-black border-t border-neutral-900 pt-16 pb-8 px-4 sm:px-8 lg:px-16 text-white">
       <div className="max-w-7xl mx-auto">
         
         {/* ================= TOP BLOCK: LINKS & INFO ================= */}
-        {/* Mobile par text-center aur 1 column, desktop par grid-cols-3 with left alignment */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-16 items-start text-center md:text-left pb-12 border-b border-neutral-100">
+        {/* Figma design contains 4 distinct columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 lg:gap-16 items-start text-center sm:text-left pb-12 border-b border-neutral-800">
           
           {/* Column 1: Brand Intro & Socials */}
-          <div className="flex flex-col items-center md:items-start max-w-sm mx-auto md:mx-0">
-            <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-wide">
-              <img src="/f-1.png" alt="Pergolas Logo" className="h-6 w-auto object-contain" />
+          <div className="flex flex-col items-center sm:items-start max-w-sm mx-auto sm:mx-0">
+            <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-wide text-white">
+              <img src="/logo.png" alt="Pergolas Logo" className="h-6 w-auto object-contain invert brightness-0" />
               <span>Pergolas</span>
             </Link>
-            <p className="mt-4 text-xs sm:text-sm text-neutral-500 leading-relaxed font-normal">
+            <p className="mt-4 text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal">
               Our family designed The Luxury Pergola with the intent to make lifetime-lasting louvered pergola as accessible for all homeowners.
             </p>
             
@@ -52,52 +52,50 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Nav Quick Links */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-base font-bold tracking-wide mb-4">Links</h3>
-            <div className="flex flex-col gap-2.5 text-xs sm:text-sm text-neutral-600 font-medium">
-              <Link to="/blog" className="hover:text-black transition-colors">Blog</Link>
-              <Link to="/terms" className="hover:text-black transition-colors">Terms of Service</Link>
-              <Link to="/refund-policy" className="hover:text-black transition-colors">Refund policy</Link>
-              <Link to="/BlogDetails" className="hover:text-black transition-colors">Installation Manual Luxury Pergola</Link>
-              <Link to="/privacy-policy" className="hover:text-black transition-colors">Privacy Policy</Link>
+          {/* Column 2: Quick Links */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-base font-bold tracking-wide text-white mb-4">Quick Link</h3>
+            <div className="flex flex-col gap-2.5 text-xs sm:text-sm text-neutral-400 font-normal">
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-white transition-colors">Terms of service</Link>
+              <Link to="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link>
+              <Link to="/warranty" className="hover:text-white transition-colors">Lifetime Warranty</Link>
+              <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
             </div>
           </div>
 
-          {/* Column 3: Contact Address & Phone details */}
-          <div className="flex flex-col items-center md:items-start text-xs sm:text-sm text-neutral-600">
-            <h3 className="text-base font-bold tracking-wide text-black mb-3">Address</h3>
-            <p className="leading-relaxed font-medium">
+          {/* Column 3: Account Links */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="text-base font-bold tracking-wide text-white mb-4">Account</h3>
+            <div className="flex flex-col gap-2.5 text-xs sm:text-sm text-neutral-400 font-normal">
+              <Link to="/my-account" className="hover:text-white transition-colors">My Account</Link>
+              <Link to="/login" className="hover:text-white transition-colors">Login / Register</Link>
+              <Link to="/cart" className="hover:text-white transition-colors">Cart</Link>
+              <Link to="/shop" className="hover:text-white transition-colors">Shop</Link>
+            </div>
+          </div>
+
+          {/* Column 4: Contact Address & Phone details */}
+          <div className="flex flex-col items-center sm:items-start text-xs sm:text-sm text-neutral-400">
+            <h3 className="text-base font-bold tracking-wide text-white mb-3">Address</h3>
+            <p className="leading-relaxed font-normal text-neutral-400">
               8762 SW 133rd Street<br />
               Miami, FL. 33176
             </p>
 
-            <h3 className="text-base font-bold tracking-wide text-black mt-6 mb-2">Phone</h3>
-            <p className="font-bold text-black tracking-wide">
+            <h3 className="text-base font-bold tracking-wide text-white mt-6 mb-2">Phone</h3>
+            <p className="font-normal text-neutral-300 tracking-wide">
               +1 (786) 278-4406
             </p>
           </div>
 
         </div>
 
-        {/* ================= BOTTOM BLOCK: COPYRIGHT & PAYMENTS ================= */}
-        {/* Mobile par elements stack-col aur order reversed hain, desktop par smooth horizontal split spread design */}
-        <div className="pt-8 flex flex-col-reverse md:flex-row items-center justify-between gap-6 text-center md:text-left text-xs text-neutral-500 font-medium">
-          
-          {/* Copyright text */}
+        {/* ================= BOTTOM BLOCK: COPYRIGHT ================= */}
+        <div className="pt-8 flex items-center justify-center text-center text-xs text-neutral-500 font-normal">
           <div>
-            © Copyright Pergolas 2024. Design by Webbulls.Us
+            © Copyright pergolas 2025. All right reserved
           </div>
-
-          {/* Payments Brand Logo (f-2.png) */}
-          <div className="h-6 flex items-center justify-center">
-            <img 
-              src="/f-2.png" 
-              alt="Supported Payment Methods (Visa, Amex, Mastercard, Paypal)" 
-              className="h-5 sm:h-6 w-auto object-contain select-none opacity-90"
-            />
-          </div>
-
         </div>
 
       </div>

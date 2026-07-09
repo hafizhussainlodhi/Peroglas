@@ -178,7 +178,7 @@ const Warranty = () => {
                 </div>
             </section>
             <TalkTo />
-            <Icon />
+
             <Footer />
         </>
     );
