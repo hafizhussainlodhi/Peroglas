@@ -108,7 +108,8 @@ const Navbar = () => {
               className="focus:outline-none p-1 shrink-0"
               aria-label="Toggle Menu"
             >
-              <img src="/2.png" alt="Menu Trigger" className="w-6 h-6 object-contain" />
+              {/* invert class lagayi hai taaki white image black ho jaye */}
+              <img src="/2.png" alt="Menu Trigger" className="w-6 h-6 object-contain invert" />
             </button>
           </div>
 
@@ -131,7 +132,8 @@ const Navbar = () => {
 
             <Link to="/" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Home</Link>
             <Link to="/our-story" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Our Story</Link>
-            <Link tourl="/luxury-pergola" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Pergolas</Link>
+            {/* tourl ko to me fix kar diya hai */}
+            <Link to="/luxury-pergola" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Pergolas</Link>
             <Link to="/shop" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Shop</Link>
             <Link to="/inspiration-gallery" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Inspiration Gallery</Link>
             <Link to="/contact-us" onClick={() => setIsOpen(false)} className="text-sm font-semibold border-b border-neutral-100 pb-2 hover:text-neutral-600">Contact Us</Link>
