@@ -48,8 +48,8 @@ function App() {
           <Route path="/contact-us" element={<ContactExpect />} /> 
           <Route path="/privacy-policy" element={<PriPolicy />} /> 
           <Route path="/warranty" element={<Warranty />} />  
-          <Route path="/inspiration-gallery" element={<Peroglas />} />  
-          <Route path="/luxury-pergola" element={<PeroglasTwo />} />  
+          <Route path="/luxury-pergola" element={<Peroglas />} />  
+          <Route path="/inspiration-gallery" element={<PeroglasTwo />} />  
           <Route path="/blog" element={<Blog />} />  
           <Route path="/BlogDetails" element={<BlogDetails />} />  
           <Route path="/mostModern" element={<MostModern />} />  
